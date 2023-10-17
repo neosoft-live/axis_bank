@@ -1,0 +1,70 @@
+
+.dashboad-section{
+    .section-title{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 1rem;
+    }
+}
+
+.insta_perso_newcustomer{
+    background-color: $white_color;
+    padding: 2rem;
+    overflow: hidden;
+
+
+    .card{
+        border: 1px solid #000;
+        margin-bottom: -1px;
+        .card-head{
+            min-height: 52px;
+            background-color: #E8E8E8;
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #000;
+            
+            
+            h3{
+                font-weight: 400;
+                font-size: 16px;
+            }
+        }
+        
+        .card-body{
+            padding: 1rem 2rem;
+            position: relative;
+
+            .row{
+                display: flex;
+                gap: 2rem;
+                flex-wrap: wrap;
+                .col{
+                    flex: 1;
+                   
+                }
+            }
+
+            .input-form .input-label{
+                width:30%;
+                min-width: 100px;
+            }
+        }
+
+        @media (max-width:750px) {
+            .card-head,.card-body{
+                padding: 0.5rem 1rem;
+            }
+            .row{
+                flex-direction: column;
+            }
+        }
+
+    }
+
+
+    @media (max-width:720px) {
+        padding: 1rem;
+    }
+}

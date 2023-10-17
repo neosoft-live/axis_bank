@@ -1,0 +1,42 @@
+
+
+.btn-link{
+    font-size: 14px;
+    color: #0008C8;
+    text-decoration: underline !important;
+    text-underline-position: under;
+}
+
+.btn-primary{
+    @include primary-font();
+    font-size: 14px;
+    font-weight: 400;
+    padding: 14px 70px;
+    background-color: $primary-color;
+    color:$white-color;
+    border-radius: 5px;
+    border: 0px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    
+    &:hover{
+        background-color: darken($primary-color, 10%);
+    }
+}
+
+.btn-group{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    &.align-right{
+        justify-content: flex-end;
+    }
+    &.align-center{
+        justify-content: center;
+    }
+
+    @media (max-width:720px) {
+        justify-content: flex-start !important;
+    }
+}

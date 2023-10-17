@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axis Bank</title>
+
+    <link rel="stylesheet" href="css/global.css">
+
+</head>
+<body>
+
+
+
+    <!-- Header Section -->
+    <header>
+        <nav>
+
+            <div class="nav-brand">
+                <img src="image/axis_logo_white.png" class="brand-logo" alt="axis_logo_white">
+            
+                <div class="bg-patten">
+                    <img src="image/bgshape.svg" alt="">
+                </div>
+
+            </div>
+
+            <div class="nav-container">
+                <ul class="nav-list">
+                    <li>
+                        <a href="login.html" class="nav-link nav-icon">
+                            <img src="image/user.svg" alt="user">
+                        </a>
+                    </li>
+                    <!-- <li>
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">User</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">Database</a>
+                    </li> -->
+                    <li>
+                        <a href="#" class="nav-link nav-icon hamburger" id="hamburger" onclick="toggleClass('#asidebar','hide-asidebar');toggleClass('#hamburger','active')">
+                            <img src="image/hamburger_icon.svg" class="menu_icon" alt="hamburger_icon">
+                            <img src="image/close_icon.svg" class="close_icon" alt="close_icon">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Main Body -->
+    <div class="main">
+
+        <div class="main-container">
+            <aside>
+                <div class="aside-bar " id="asidebar">
+                    <ul class="nav-list">
+    
+                        <li>
+                            <a href="javascript:void(0);" class="nav-link">Insta Perso Card Issuance</a>
+                        </li>
+                            <ul class="nav-sub-list">
+                                <li>
+                                        <a href="insta_perso_newcustomer.html" class="nav-link ">New Customer</a>
+                                </li>
+                                <li>
+                                        <a href="insta_perso_existingcustomer.html" class="nav-link">Existing Customer</a>
+                                </li>
+                                <li>
+                                        <a href="insta_perso_existingcustomer_tm.html" class="nav-link active">Existing Customer (TN)</a>
+                                </li>
+                            </ul>
+    
+                        <li>
+                            <a href="javascript:void(0);" class="nav-link">Non Perso Card Issuance</a>
+                        </li>
+                        <ul class="nav-sub-list">
+                            <li>
+                                    <a href="#" class="nav-link">New Customer</a>
+                            </li>
+                            <li>
+                                    <a href="#" class="nav-link">Existing Customer</a>
+                            </li>
+                            <li>
+                                    <a href="#" class="nav-link">Existing Customer (TN)</a>
+                            </li>
+                        </ul>
+    
+    
+                        <li>
+                            <a href="#" class="nav-link">Card Replacement</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">User Management</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">Role Management</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">Manage Logs</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">Log out</a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>  
+    
+            <div class="dashboad-section">
+                <section class="insta_perso_newcustomer">
+                    <h2 class="section-title">Existing Customer</h2>
+                   
+                    <div class="card">
+                        <div class="card-head">
+                            <!-- <h3>Head Title</h3> -->
+                        </div>
+
+                        <div class="card-body">
+
+                            <div class="row">
+
+                                <div class="col" style="max-width: 800px;">
+                                   
+                                    <div class="input-form field-style1">
+                                        <label for="" class="input-label"> Token Number </label>
+                                        <input type="text" class="input-control" placeholder="">
+                                        <button class="btn-primary " >Fetch Data</button>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <div class="card-head">
+                            <!-- <h3>Head Title</h3> -->
+                        </div>
+
+                        <div class="card-body">
+
+                            <div class="row">
+
+                                <div class="col">
+                                    <div class="input-form">
+                                        <label for="" class="input-label">Product / Progam</label>
+                                        <select name="" id="" class="input-select">
+                                            <option value="0"> </option>
+                                            <option value="1">Option 1</option>
+                                            <option value="2">Option 2</option>
+                                            <option value="3">Option 3</option>
+                                            <option value="4">Option 4</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-form">
+                                        <label for="" class="input-label">Salutation</label>
+                                        <select name="" id="" class="input-select">
+                                            <option value="1">Mr</option>
+                                            <option value="2">Miss</option>
+                                            <option value="3">Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-form">
+                                        <label for="" class="input-label">First Name</label>
+                                        <input type="text" class="input-control" placeholder="">
+                                    </div>
+                                    <div class="input-form">
+                                        <label for="" class="input-label">Middle Name</label>
+                                        <input type="text" class="input-control" placeholder="">
+                                    </div>
+                                    <div class="input-form">
+                                        <label for="" class="input-label">Last Name</label>
+                                        <input type="text" class="input-control" placeholder="">
+                                    </div>
+
+                                    <div class="input-form">
+                                        <label for="" class="input-label">Date of Birth</label>
+                                        <div class="dateofbirth">
+                                            <select name="" id="" class="input-select">
+                                                <option value="1">DD</option>
+                                                <option value="1">01</option>
+                                                <option value="1">02</option>
+                                                <option value="1">03</option>
+                                                <option value="1">04</option>
+                                            </select>
+                                            <select name="" id="" class="input-select">
+                                                <option value="1">MM</option>
+                                                <option value="1">01</option>
+                                                <option value="1">02</option>
+                                                <option value="1">03</option>
+                                                <option value="1">04</option>
+                                            </select>
+                                            <select name="" id="" class="input-select">
+                                                <option value="1">YYYY</option>
+                                                <option value="1">1992</option>
+                                                <option value="1">1993</option>
+                                                <option value="1">1994</option>
+                                                <option value="1">1995</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                                <div class="col">
+                                    <div class="input-form">
+                                        <label for="" class="input-label">Mobile Number</label>
+                                        <input type="text" class="input-control" placeholder="" value="+91 -">
+                                    </div>
+                                    <div class="input-form">
+                                        <label for="" class="input-label">OVD / National ID</label>
+                                        <select name="" id="" class="input-select">
+                                            <option value="1">PAN</option>
+                                            <option value="2">Adhar Card</option>
+                                            <option value="3">Passport</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-form">
+                                        <label for="" class="input-label">OVD / National ID Number</label>
+                                        <input type="text" class="input-control" placeholder="">
+                                    </div>
+                                    <div class="input-form">
+                                        <label for="" class="input-label">Name on Card</label>
+                                        <input type="text" class="input-control" placeholder="">
+                                    </div>
+                                    <div class="input-form">
+                                        <label for="" class="input-label">Nationality</label>
+                                        <input type="text" class="input-control" placeholder="">
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="align-right">
+                                <button class="btn-primary">Edit</button>
+                            </div>
+
+
+                        </div>
+
+                    </div>  
+                    
+                    <div class="card">
+                        <div class="card-head">
+                            <!-- <h3>Head Title</h3> -->
+                        </div>
+
+                        <div class="card-body">
+
+                            <div class="row">
+
+                                <div class="col">
+                                    <div class="input-form">
+                                        <label for="" class="input-label">OTP / Passcode</label>
+                                        <input type="text" class="input-control" placeholder="">
+                                    </div>
+                                    <div class="link-content align-right">
+                                        <a href="#" class="btn-link">Resend OTP</a>
+                                    </div>
+                                    
+                                    <div class="input-form">
+                                        <input type="checkbox" class="input-checkbox" name="tandc" id="tandc">
+                                        <label for="tandc" class="check-box-label">Terms and Conditions applicable</label>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col">
+                                    
+
+                                </div>
+                            </div>
+
+                            <div class="btn-group align-right">
+                                <button class="btn-primary">Submit</button>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </section>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="js/script.js"></script>
+   
+</body>
+</html>
