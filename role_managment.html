@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axis Bank</title>
+
+    <link rel="stylesheet" href="css/global.css">
+
+</head>
+<body>
+
+
+
+    <!-- Header Section -->
+    <header>
+        <nav>
+
+            <div class="nav-brand">
+                <img src="image/axis_logo_white.png" class="brand-logo" alt="axis_logo_white">
+            
+                <div class="bg-patten">
+                    <img src="image/bgshape.svg" alt="">
+                </div>
+
+            </div>
+
+            <div class="nav-container">
+                <ul class="nav-list">
+                    <li>
+                        <a href="index.html" class="nav-link nav-icon">
+                            <img src="image/user.svg" alt="user">
+                        </a>
+                    </li>
+                    <!-- <li>
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">User</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">Database</a>
+                    </li> -->
+                    <li>
+                        <a href="#" class="nav-link nav-icon hamburger" id="hamburger" onclick="toggleClass('#asidebar','hide-asidebar');toggleClass('#hamburger','active')">
+                            <img src="image/hamburger_icon.svg" class="menu_icon" alt="hamburger_icon">
+                            <img src="image/close_icon.svg" class="close_icon" alt="close_icon">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Main Body -->
+    <div class="main">
+
+        <div class="main-container">
+            <aside>
+                <div class="aside-bar " id="asidebar">
+                    <ul class="nav-list">
+    
+                        <li>
+                            <a href="javascript:void(0);" class="nav-link">Insta Perso Card Issuance</a>
+                        </li>
+                            <ul class="nav-sub-list">
+                                <li>
+                                        <a href="insta_perso_newcustomer.html" class="nav-link active">New Customer</a>
+                                </li>
+                                <li>
+                                        <a href="insta_perso_existingcustomer.html" class="nav-link">Existing Customer</a>
+                                </li>
+                                <li>
+                                        <a href="insta_perso_existingcustomer_tm.html" class="nav-link">Existing Customer (TN)</a>
+                                </li>
+                            </ul>
+    
+                        <li>
+                            <a href="javascript:void(0);" class="nav-link">Non Perso Card Issuance</a>
+                        </li>
+                        <ul class="nav-sub-list">
+                            <li>
+                                    <a href="non_perso_newcustomer.html" class="nav-link">New Customer</a>
+                            </li>
+                            <li>
+                                    <a href="non_perso_existingcustomer.html" class="nav-link">Existing Customer</a>
+                            </li>
+                            <li>
+                                    <a href="non_perso_existingcustomer_tm.html" class="nav-link">Existing Customer (TN)</a>
+                            </li>
+                        </ul>
+    
+    
+                        <li>
+                            <a href="card_replacement.html" class="nav-link">Card Replacement</a>
+                        </li>
+                        <li>
+                            <a href="user_managment.html" class="nav-link">User Management</a>
+                        </li>
+                        <ul class="nav-sub-list">
+                            <li>
+                                    <a href="new_user.html" class="nav-link">New User</a>
+                            </li>
+                            <li>
+                                    <a href="existing_user.html" class="nav-link">Existing User</a>
+                            </li>
+                            
+                        </ul>
+                        <li>
+                            <a href="role_managment.html" class="nav-link active">Role Management</a>
+                        </li>
+                        <li>
+                            <a href="manage_logs.html" class="nav-link">Manage Logs</a>
+                        </li>
+                        <li>
+                            <a href="index.html" class="nav-link">Log out</a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>  
+    
+            <div class="dashboad-section">
+                <section class="insta_perso_newcustomer">
+                    <div class="space-between">
+                        <h2 class="section-title">Role Management</h2>
+                        <a href="new_role.html" class="btn-primary my-2">Add New</a>
+                    </div>
+                   
+                    <div class="table-container">
+                        
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th style="width: 40px;"></th>
+                                    <th>Role_ID</th>
+                                    <th>Role Name</th>
+                                    <th>Description</th>
+                                    <th>Status</th>
+                                    <th style="width: 300px;text-align: right;">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="input-form">
+                                            <input type="checkbox" class="input-checkbox" name="tandc" id="tandc">
+                                            <label for="tandc" class="check-box-label"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p>ID001</p>
+                                    </td>
+                                    <td>
+                                        <p>Admin User</p>
+                                    </td>
+                                    <td>
+                                        <p>Description 1</p>
+                                    </td>
+                                    <td>
+                                        <p>Na</p>
+                                    </td>
+                                    <td>
+                                        <div class="btn-group ">
+                                            <button class="btn-primary ">Activate</button>
+                                            <button class="btn-primary ">Edit</button>
+                                            <button class="btn-primary ">Deactivate</button>
+                                            <button class="btn-primary ">Delete</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="input-form">
+                                            <input type="checkbox" class="input-checkbox" name="tandc" id="tandc">
+                                            <label for="tandc" class="check-box-label"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p>ID002</p>
+                                    </td>
+                                    <td>
+                                        <p>Card Issuer</p>
+                                    </td>
+                                    <td>
+                                        <p>Description 2</p>
+                                    </td>
+                                    <td>
+                                        <p>Active</p>
+                                    </td>
+                                    <td>
+                                        <div class="btn-group ">
+                                            <button class="btn-primary ">Activate</button>
+                                            <button class="btn-primary ">Edit</button>
+                                            <button class="btn-primary ">Deactivate</button>
+                                            <button class="btn-primary ">Delete</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    
+
+                </section>
+            </div>
+        </div>
+
+
+        <div class="modal-popup " id="approval_pending_popup">
+            <div class="modal-content"> 
+                <div class="modal-body">
+                    <h3 class="modal-title">Request Pending for Approval</h3>
+                </div>
+                <div class="modal-footer">
+                    <div class="btn-group align-right">
+                        <button class="btn-primary" onclick="toggleClass('#approval_pending_popup','active')">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/script.js"></script>
+   
+</body>
+</html>

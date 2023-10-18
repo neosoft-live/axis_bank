@@ -1,0 +1,46 @@
+
+
+.table-container{
+
+    overflow-x: auto;
+
+    table{
+        width: 100%;
+        min-width: 100%;
+        border-collapse: collapse;
+        border: 1px solid $black_400_color;
+
+        .btn-group{
+            gap: 5px;
+            justify-content: flex-end;
+            .btn-primary{
+                padding: 14px 20px;
+            }
+        }
+        .flex-column{
+            flex-direction: column;
+        }
+
+        td,th{
+            padding: 1rem;
+            text-align: left;
+            font-size: 14px;
+        }
+
+        thead{
+            tr{
+                background-color: $black_400_color;
+
+            }
+        }
+
+        tbody{
+            tr{
+                &:nth-child(even){
+                    background-color: $black_200_color;
+                }
+            }
+        }
+    }
+
+}

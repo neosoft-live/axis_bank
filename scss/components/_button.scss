@@ -40,3 +40,10 @@
         justify-content: flex-start !important;
     }
 }
+
+
+@media (max-width:720px) {
+    .btn-primary{
+        padding: 14px 30px;
+    }
+}

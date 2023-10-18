@@ -7,5 +7,6 @@ function toggleClass(selector,classname){
         }else{
             obj.classList.add(classname);
         }
-    })
+    });
 }
+

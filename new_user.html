@@ -100,7 +100,7 @@
                         </li>
                         <ul class="nav-sub-list">
                             <li>
-                                    <a href="new_user.html" class="nav-link">New User</a>
+                                    <a href="new_user.html" class="nav-link active">New User</a>
                             </li>
                             <li>
                                     <a href="existing_user.html" class="nav-link">Existing User</a>
@@ -122,7 +122,7 @@
     
             <div class="dashboad-section">
                 <section class="insta_perso_newcustomer">
-                    <h2 class="section-title">Create new section</h2>
+                    <h2 class="section-title">Add New User</h2>
                    
                     <div class="card">
                         <div class="card-head">
@@ -135,96 +135,48 @@
 
                                 <div class="col">
                                     <div class="input-form">
-                                        <label for="" class="input-label">Product / Progam</label>
-                                        <select name="" id="" class="input-select">
-                                            <option value="0"> </option>
-                                            <option value="1">Option 1</option>
-                                            <option value="2">Option 2</option>
-                                            <option value="3">Option 3</option>
-                                            <option value="4">Option 4</option>
-                                        </select>
-                                    </div>
-                                    <div class="input-form">
-                                        <label for="" class="input-label">Salutation</label>
-                                        <select name="" id="" class="input-select">
-                                            <option value="1">Mr</option>
-                                            <option value="2">Miss</option>
-                                            <option value="3">Other</option>
-                                        </select>
-                                    </div>
-                                    <div class="input-form">
-                                        <label for="" class="input-label">First Name</label>
+                                        <label for="" class="input-label">User ID</label>
                                         <input type="text" class="input-control" placeholder="">
                                     </div>
                                     <div class="input-form">
-                                        <label for="" class="input-label">Middle Name</label>
+                                        <label for="" class="input-label">Name</label>
                                         <input type="text" class="input-control" placeholder="">
                                     </div>
                                     <div class="input-form">
-                                        <label for="" class="input-label">Last Name</label>
+                                        <label for="" class="input-label">Email</label>
                                         <input type="text" class="input-control" placeholder="">
                                     </div>
-
-                                    <div class="input-form">
-                                        <label for="" class="input-label">Date of Birth</label>
-                                        <div class="dateofbirth">
-                                            <select name="" id="" class="input-select">
-                                                <option value="1">DD</option>
-                                                <option value="1">01</option>
-                                                <option value="1">02</option>
-                                                <option value="1">03</option>
-                                                <option value="1">04</option>
-                                            </select>
-                                            <select name="" id="" class="input-select">
-                                                <option value="1">MM</option>
-                                                <option value="1">01</option>
-                                                <option value="1">02</option>
-                                                <option value="1">03</option>
-                                                <option value="1">04</option>
-                                            </select>
-                                            <select name="" id="" class="input-select">
-                                                <option value="1">YYYY</option>
-                                                <option value="1">1992</option>
-                                                <option value="1">1993</option>
-                                                <option value="1">1994</option>
-                                                <option value="1">1995</option>
-                                            </select>
-                                        </div>
+                                    <div class="input-form textarea-form">
+                                        <label for="" class="input-label">Remarks</label>
+                                        <textarea name="" id="" cols="30" rows="10" class="input-control"></textarea>
                                     </div>
+                                    
                                     
                                     
                                 </div>
                                 <div class="col">
                                     <div class="input-form">
-                                        <label for="" class="input-label">Mobile Number</label>
+                                        <label for="" class="input-label">Phone Number</label>
                                         <input type="text" class="input-control" placeholder="" value="+91 -">
                                     </div>
                                     <div class="input-form">
-                                        <label for="" class="input-label">OVD / National ID</label>
+                                        <label for="" class="input-label">Role</label>
                                         <select name="" id="" class="input-select">
-                                            <option value="1">PAN</option>
-                                            <option value="2">Adhar Card</option>
-                                            <option value="3">Passport</option>
+                                            <option value="1">Card Issuer</option>
+                                            <option value="2">Admin User</option>
                                         </select>
                                     </div>
                                     <div class="input-form">
-                                        <label for="" class="input-label">OVD / National ID Number</label>
+                                        <label for="" class="input-label">Branch</label>
                                         <input type="text" class="input-control" placeholder="">
                                     </div>
-                                    <div class="input-form">
-                                        <label for="" class="input-label">Name on Card</label>
-                                        <input type="text" class="input-control" placeholder="">
-                                    </div>
-                                    <div class="input-form">
-                                        <label for="" class="input-label">Nationality</label>
-                                        <input type="text" class="input-control" placeholder="">
-                                    </div>
+                                  
 
                                 </div>
                             </div>
 
                             <div class="align-right">
-                                <button class="btn-primary">Next</button>
+                                <button class="btn-primary"  onclick="toggleClass('#approval_pending_popup','active')">Submit</button>
                             </div>
 
 
@@ -232,50 +184,25 @@
 
                     </div>
                     
-                    <div class="card">
-                        <div class="card-head">
-                            <!-- <h3>Head Title</h3> -->
-                        </div>
-
-                        <div class="card-body">
-
-                            <div class="row">
-
-                                <div class="col">
-                                    <div class="input-form">
-                                        <label for="" class="input-label">OTP / Passcode</label>
-                                        <input type="text" class="input-control" placeholder="">
-                                    </div>
-                                    <div class="link-content align-right">
-                                        <a href="#" class="btn-link">Resend OTP</a>
-                                    </div>
-                                    
-                                    <div class="input-form">
-                                        <input type="checkbox" class="input-checkbox" name="tandc" id="tandc">
-                                        <label for="tandc" class="check-box-label">Terms and Conditions applicable</label>
-                                    </div>
-                                    
-                                </div>
-                                <div class="col">
-                                    
-
-                                </div>
-                            </div>
-
-                            <div class="btn-group align-right">
-                                <button class="btn-primary">Edit</button>
-                                <button class="btn-primary">Submit</button>
-                            </div>
-
-
-                        </div>
-
-                    </div>
+                    
 
                 </section>
             </div>
         </div>
 
+
+        <div class="modal-popup active" id="approval_pending_popup">
+            <div class="modal-content"> 
+                <div class="modal-body align-center">
+                    <h3 class="modal-title">Request Pending for Approval</h3>
+                </div>
+                <div class="modal-footer">
+                    <div class="btn-group align-center">
+                        <button class="btn-primary" onclick="toggleClass('#approval_pending_popup','active')">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 
