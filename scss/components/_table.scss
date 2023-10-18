@@ -13,6 +13,7 @@
         .btn-group{
             gap: 5px;
             justify-content: flex-end;
+            flex-wrap: nowrap;
             .btn-primary{
                 padding: 14px 20px;
             }
